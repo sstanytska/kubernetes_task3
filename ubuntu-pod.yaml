@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: ubuntu-ds
+  labels:
+    k8s-app: ubuntu
+spec:
+  selector:
+    matchLabels:
+      name: ubuntu
+  template:
+    metadata:
+      labels:
+        name: ubuntu
+    spec:
+      containers:
+      - name: ubuntu-ds-test
+        image: ubuntu
+        stdin: true
+        tty: true

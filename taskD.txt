@@ -1,0 +1,6 @@
+NAME                                            STATUS    ROLES     AGE       VERSION         EXTERNAL-IP      OS-IMAGE             KERNEL-VERSION    CONTAINER-RUNTIME
+gke-kube-cluster-1-default-pool-178a89df-cckx   Ready     <none>    10d       v1.11.6-gke.3   104.198.152.26   Ubuntu 18.04.1 LTS   4.15.0-1023-gcp   docker://17.3.2
+gke-kube-cluster-1-default-pool-178a89df-v4qq   Ready     <none>    10d       v1.11.6-gke.3   35.239.189.191   Ubuntu 18.04.1 LTS   4.15.0-1023-gcp   docker://17.3.2
+NAME              READY     STATUS    RESTARTS   AGE       IP            NODE
+ubuntu-ds-4ftwm   1/1       Running   0          5m        10.28.0.118   gke-kube-cluster-1-default-pool-178a89df-cckx
+ubuntu-ds-dnhgp   1/1       Running   0          5m        10.28.1.68    gke-kube-cluster-1-default-pool-178a89df-v4qq

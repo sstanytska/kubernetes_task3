@@ -1,0 +1,5 @@
+Server:         10.31.240.10
+Address:        10.31.240.10#53
+
+Name:   nginx-pod-headless-service.default.svc.cluster.local
+Address: 10.28.1.79

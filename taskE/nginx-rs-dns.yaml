@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: ReplicaSet
+metadata:
+  labels:
+    name: nginx-rs-dns
+  name: nginx-rs-dns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-dns
+  template:
+    metadata:
+      labels:
+        app: nginx-dns
+    spec:
+      containers:
+      - image: nginx
+        name: nginx-dns
+        ports:
+        - containerPort: 80
+          name: http
+          protocol: TCP
